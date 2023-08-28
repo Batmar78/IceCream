@@ -1,3 +1,7 @@
+.header {
+   position: relative;
+}
+
 .header-nav {
    display: flex;
    justify-content: space-between;
@@ -25,9 +29,12 @@
 
 .header-btn-list {
    display: flex;
-   padding-bottom: 182px;
+   padding-bottom: 237px;
 }
 
 .header-points__img{
    width: 100%;
+   position: absolute;
+   bottom: 0;
+   right: 0;
 }
