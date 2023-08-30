@@ -1,5 +1,6 @@
 .header {
    position: relative;
+   border: 1px solid tomato;
 }
 
 .header-nav {
@@ -33,8 +34,37 @@
 }
 
 .header-points__img{
-   width: 100%;
+   max-width: 320px;
    position: absolute;
    bottom: 0;
-   right: 0;
+   right: 0%;
+}
+
+.header-ice-cream__img {
+   max-width: 177px;
+   position: absolute;
+   bottom: 0;
+   right: 60px;
+   
+}
+
+.header-btn__products,
+.header-btn__made {
+   color: var(--text-color);
+   font-family: Montserrat;
+   font-size: 12px;
+   font-weight: 600;
+   background-color: var(--primary-background-color);
+   width: 108px;
+   height: 38px;
+   border-radius: 8px;
+   border: 2px solid var(--primary-yelow-color);
+}
+
+.header-btn__made {
+   color: var(--primary-yelow-color);
+   text-decoration-line: underline;
+   width: 118px;
+   margin-left: 4px;
+   border: none;
 }
