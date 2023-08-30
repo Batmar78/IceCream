@@ -1,4 +1,4 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+// @import '~node_modules/modern-normalize/modern-normalize.css';
 
 html {
     box-sizing: border-box;
@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    margin: 0;
     background-color: var(--primary-background-color);
     color: var(--primary-black-color);
     font-family: var(--alt-font), var(--alt-title-font);
