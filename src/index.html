@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
@@ -243,38 +243,38 @@
       <!--  Products  -->
       <section class="products section">
         <div class="container">
-          <label for="products-title" class="products-title__label">
-            100% NATURAL
+          <div class="products-title__thumb">
+            <label for="products-title" class="products-title__label">
+              100% NATURAL
+            </label>
             <h2 class="products-title title" id="products-title">PRODUCTS</h2>
-          </label>
-          <ul class="products__list list">
-            <li>
-              <img src="#" alt="ice cream" />
-              <h3>ICE CREAM</h3>
-              <p>
+          </div>
+
+          <ul class="products-list list">
+            <li class="products-card card-icecream">
+              <h3 class="products-card__title">ICE CREAM</h3>
+              <p class="products-card__text">
                 Soft ice cream with a delicate taste. Made with milk, cream,
                 sugar and natural stabilizer
               </p>
-              <button></button>
+              <!--<button></button>-->
             </li>
-            <li>
-              <img src="#" alt="ice coffee" />
-              <h3>ICE COFFEE</h3>
-              <p>
+            <li class="products-card card-icecoffee">
+              <h3 class="products-card__title">ICE COFFEE</h3>
+              <p class="products-card__text">
                 Fragrant invigorating drink created from 100% natural
                 ingredients without the use of preservatives and flavor
                 enhancers
               </p>
-              <button></button>
+              <!--<button></button>-->
             </li>
-            <li>
-              <img src="#" alt="milkshakes" />
-              <h3>MILKSHAKES</h3>
-              <p>
+            <li class="products-card card-milkshakes">
+              <h3 class="products-card__title">MILKSHAKES</h3>
+              <p class="products-card__text">
                 Sweet drinks based on milk and ice cream, supplemented with
                 syrups, fruits, berries and other sweets of your choice
               </p>
-              <button></button>
+              <!--<button></button>-->
             </li>
           </ul>
         </div>
