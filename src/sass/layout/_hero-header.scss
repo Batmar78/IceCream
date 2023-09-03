@@ -10,6 +10,19 @@
    padding-bottom: 50px;
 }
 
+.mobile-menu-btn{
+   background-color: var(--primary-background-color);
+   padding: 0;
+   border: none;
+   width: 32px;
+   height: 32px;
+}
+
+.mobile-menu__icon {
+   width: 32px;
+   height: 32px;
+}
+
 .header-title {
    max-width: 247px;
    font-size: 26px;

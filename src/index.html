@@ -70,8 +70,8 @@
               alt="Логотип IceCream"
           /></picture>
           <button type="button" class="mobile-menu-btn">
-            <svg class="mobile-menu__icon" width="32" height="32">
-              <use href="#"></use>
+            <svg class="mobile-menu__icon">
+              <use href="./images/sprite.svg#icon-mobile_menu"></use>
             </svg>
           </button>
         </nav>
@@ -234,7 +234,7 @@
           <img
             class="header-ice-cream__img"
             src="./images/ice_cream_header_mobile.png"
-            alt="Жовті крапки"
+            alt="Морозиво"
         /></picture>
       </div>
     </header>
@@ -257,7 +257,11 @@
                 Soft ice cream with a delicate taste. Made with milk, cream,
                 sugar and natural stabilizer
               </p>
-              <!--<button></button>-->
+              <a href="#" class="products-arrow" aria-label="Перейти">
+                <svg class="products-arrow__icon">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
             </li>
             <li class="products-card card-icecoffee">
               <h3 class="products-card__title">ICE COFFEE</h3>
@@ -266,7 +270,11 @@
                 ingredients without the use of preservatives and flavor
                 enhancers
               </p>
-              <!--<button></button>-->
+              <a href="#" class="products-arrow" aria-label="Перейти">
+                <svg class="products-arrow__icon">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
             </li>
             <li class="products-card card-milkshakes">
               <h3 class="products-card__title">MILKSHAKES</h3>
@@ -274,7 +282,11 @@
                 Sweet drinks based on milk and ice cream, supplemented with
                 syrups, fruits, berries and other sweets of your choice
               </p>
-              <!--<button></button>-->
+              <a href="#" class="products-arrow" aria-label="Перейти">
+                <svg class="products-arrow__icon">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -282,42 +294,104 @@
       <!--  About  -->
       <section class="about section">
         <div class="container">
-          <label for="about-title">
-            TRADITION AND LOVE
+          <div class="about-title__thumb">
+            <label class="about-title__label" for="about-title">
+              TRADITION AND LOVE
+            </label>
             <h2 class="about-title title" id="about-title">HOW IT'S MADE?</h2>
-          </label>
+          </div>
+
+          <picture>
+            <source
+              srcset="
+                ./images/about_cow_mob.webp    1x,
+                ./images/about_cow_mob@2x.webp 2x,
+                ./images/about_cow_mob@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 767px)" />
+            <source
+              srcset="
+                ./images/about_cow_mob.png    1x,
+                ./images/about_cow_mob@2x.png 2x,
+                ./images/about_cow_mob@3x.png 3x
+              "
+              media="(max-width: 767px)" />
+
+            <source
+              srcset="
+                ./images/about_cow_tab.webp    1x,
+                ./images/about_cow_tab@2x.webp 2x,
+                ./images/about_cow_tab@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 1199px)" />
+            <source
+              srcset="
+                ./images/about_cow_tab.png    1x,
+                ./images/about_cow_tab@2x.png 2x,
+                ./images/about_cow_tab@3x.png 3x
+              "
+              media="(max-width: 1199px)" />
+            <source
+              srcset="
+                ./images/about_cow_desk.webp    1x,
+                ./images/about_cow_desk@2x.webp 2x,
+                ./images/about_cow_desk@3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ./images/about_cow_desk.png    1x,
+                ./images/about_cow_desk@2x.png 2x,
+                ./images/about_cow_desk@3x.png 3x
+              "
+              media="(min-width: 1200px)" />
+            <img
+              class="about-cow__img"
+              src="./images/about_cow_mob.png"
+              alt="Корова"
+          /></picture>
+          <div class="about-text">
+            <p>
+              Ice is a place where you will become not only a little happier,
+              but also healthier. Health is the main value for us, and we follow
+              it when creating our handmade desserts.
+            </p>
+            <p>
+              We use traditional recipes and 100% natural ingredients. Our
+              products are so natural that they can be given to children from
+              the age of three years. Sweets lovers can expect 55 types of ice
+              cream, 15 types of coffee and 23 milkshakes.
+            </p>
+            <p>This is enough to choose ice cream and coffee for any mood!</p>
+          </div>
+          <button class="about-btn__readmore">Read more</button>
         </div>
-        <img src="#" alt="Cow" />
-        <p>
-          Ice is a place where you will become not only a little happier, but
-          also healthier. Health is the main value for us, and we follow it when
-          creating our handmade desserts.
-        </p>
-        <p>
-          We use traditional recipes and 100% natural ingredients. Our products
-          are so natural that they can be given to children from the age of
-          three years. Sweets lovers can expect 55 types of ice cream, 15 types
-          of coffee and 23 milkshakes.
-        </p>
-        <p>This is enough to choose ice cream and coffee for any mood!</p>
-        <button>Read more</button>
       </section>
       <!--  Advantages  -->
       <section class="advantages section">
         <div class="container">
-          <h2>Advantages</h2>
-          <ul>
-            <li>
-              <p>721</p>
-              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          <h2 class="advantages-title visually-hidden">Advantages</h2>
+          <ul class="advantages-list list">
+            <li class="advantages-item adventage-cow">
+              <p class="advantages-item__total">721</p>
+              <p class="advantages-item__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
-            <li>
-              <p>16kg</p>
-              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            <li class="advantages-item adventage-weight">
+              <p class="advantages-item__total">16kg</p>
+              <p class="advantages-item__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
-            <li>
-              <p>84</p>
-              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            <li class="advantages-item adventage-ice">
+              <p class="advantages-item__total adventage-third">84</p>
+              <p class="advantages-item__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
           </ul>
         </div>
