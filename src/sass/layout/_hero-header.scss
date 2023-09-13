@@ -1,11 +1,12 @@
 .header {
    position: relative;
-   border: 1px solid tomato;
+   
 }
 
 .header-nav {
    display: flex;
    justify-content: space-between;
+   align-items: center;
    padding-top: 12px;
    padding-bottom: 50px;
 }
