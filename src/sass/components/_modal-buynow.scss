@@ -1,0 +1,92 @@
+.modal-buynow__list {
+    margin-top: 83px;
+    margin-bottom: 31px;
+}
+
+.modal-buynow__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 83px;
+    text-align: center;
+    max-width: 132px;
+    height: 136px;
+    border-radius: 15px;
+    background-color: inherit;
+    background-position: 50% 50%;
+    box-shadow: 0px 5.26027px 19.72603px 0px rgba(212, 20, 67, 0.10);
+
+    &::before {
+            display: block;
+            content: "";
+            max-width: 132px;
+            width: 103%;
+            height: 139px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: var(--card-gap);
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            transform: translate(-2px, -50% );
+            background-position: center;
+            background-size: 120%;
+    
+        }
+
+    &.ice-cream {
+        border: 2px solid #96AF8C;
+
+        &::before {
+            background-image: url("./../images/products_ice_cream_mob_tab.png");
+        }    
+    }
+
+    &.ice-coffee {
+        border: 2px solid var(--alt-background-color-yelow);
+        background: var(--alt-background-color-yelow);
+
+        &::before {
+            background-image: url("./../images/products_ice_coffee_mob_tab.png");
+        }   
+    }
+
+    &.milkshake {
+        border: 2px solid var(--alt-text-color);
+
+        &::before {
+            background-image: url("./../images/products_milkshakes_mob_tab.png");
+        }    
+    }
+}
+
+.modal-buynow__item-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: translateY(-70px);
+}
+
+.modal-buynow__form-input {
+    padding: 8px 12px;    
+}
+
+@media screen and (min-width: 768px) {
+    .modal-buynow__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        margin-top: 40px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .modal-buynow__item {
+        width: 100%;
+        margin-top: 70px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-buynow__form-input {
+        padding: 11px 16px;
+    }
+}

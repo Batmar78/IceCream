@@ -1,0 +1,70 @@
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200.25%;
+    }
+
+    70% {
+        left: -200.25%;
+    }
+
+    75% {
+        left: -300.25%;
+    }
+
+    90% {
+        left: -300.25%;
+    }
+
+    100% {
+        left: -400.25%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+figure {
+    margin: 0;
+    font-weight: 100;
+}
+
+div#captioned-gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+figure.slider {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+figure.slider figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: inherit;
+}
+
+figure.slider img {
+    width: 100%;
+    height: auto;
+}

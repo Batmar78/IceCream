@@ -1,0 +1,27 @@
+.modal-readmore__title {
+    margin-bottom: var(--card-gap);
+}
+
+.modal-readmore__video {
+    width: 220px;
+    height: 199px;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: var(--card-gap);
+}
+
+.modal-readmore__text {
+    line-height: 1.4em;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-readmore__title {
+        margin-bottom: 32px;
+    }
+
+    .modal-readmore__video {
+        width: 444px;
+        height: 205px;
+    }
+}

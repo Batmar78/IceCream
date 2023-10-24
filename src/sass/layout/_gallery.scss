@@ -1,8 +1,7 @@
 .gallery {
     position: absolute;
     transform: translateY(-27%); 
-    width: 100vw;
-    
+    width: 100vw;   
 }
 
 .gallery_icecream {
@@ -10,5 +9,37 @@
     max-width: 280px;
     border-radius: 8px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
+}
+
+@media screen and (min-width: 480px) {
+    .gallery {
+        transform: translateY(-49px);
+    }
+
+    .gallery_icecream {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        transform: translateY(-144px);
+    }
+
+    .gallery_icecream {
+        width: 704px;
+        border-radius: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery {
+        transform: translateY(-98px);
+    }
+
+    .gallery_icecream {
+        width: 1013px;
+        border-radius: 24px;
+    }
 }

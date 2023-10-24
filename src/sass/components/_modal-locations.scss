@@ -1,0 +1,45 @@
+// .contact-btns {
+//     position: relative;
+// }
+
+// .backdrop-location {
+//     top: 60%;
+// }
+
+.modal-location__title {
+    margin-bottom: var(--card-gap);
+}
+
+.modal-location__map {
+    display: block;
+    max-width: 220px;
+    max-height: 199px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.btn-modal-location__map {
+    display: inline-block;
+    font-family: var(--alt-font);
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 600;
+    color: var(--primary-black-color);
+    text-decoration: none;
+    border: none;
+    padding: 12px 34px;
+    background-color: var(--primary-yelow-color);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-location__title {
+        margin-bottom: 32px;
+    }
+
+    .modal-location__map {
+        max-width: 440px;
+        max-height: 260px;
+        margin-bottom: 32px;
+    }
+}

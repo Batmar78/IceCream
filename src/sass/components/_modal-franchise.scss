@@ -1,0 +1,44 @@
+// .backdrop-franchise {
+//     top: 50%;
+// }
+
+.modal-franchise__title {
+    letter-spacing: normal;
+    margin-bottom: var(--card-gap);
+}
+
+.modal-franchise__text {
+    text-align: left;
+    line-height: 1.4em;
+    margin-bottom: 24px;
+}
+
+.modal-franchise__form-input {
+    padding: 8px 12px 7px 12px;
+}
+
+.modal-franchise__form>.input-textarea {
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-franchise__title {
+        width: 322px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+
+    .modal-franchise__text {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .modal-franchise__form-input {
+        padding: 11px 16px;
+    }
+
+    .modal-franchise__form>.input-textarea {
+        margin-bottom: 32px;
+    }
+}

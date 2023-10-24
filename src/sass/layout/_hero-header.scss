@@ -1,14 +1,17 @@
 .header {
-   position: relative;
-   
+   padding-top: 12px; 
 }
 
 .header-nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-top: 12px;
-   padding-bottom: 50px;
+   margin-bottom: 50px;
+}
+
+.logo {
+   width: 40px;
+   height: 37px;
 }
 
 .mobile-menu-btn{
@@ -17,6 +20,7 @@
    border: none;
    width: 32px;
    height: 32px;
+   cursor: pointer;
 }
 
 .mobile-menu__icon {
@@ -28,12 +32,11 @@
    max-width: 247px;
    font-size: 26px;
    font-weight: 400;
-   letter-spacing: 1.04px;
    font-family: var(--primary-title-font); 
    color: var(--alt-white-color);
    background-color: var(--primary-background-color);
    text-transform: uppercase;
-   padding-bottom: 32px;
+   margin-bottom: 32px;
 }
 
 .header-title__passion {
@@ -44,41 +47,323 @@
 
 .header-btn-list {
    display: flex;
-   padding-bottom: 237px;
+   margin-bottom: 237px;
 }
 
-.header-points__img{
-   max-width: 320px;
-   position: absolute;
-   bottom: 0;
-   right: 0%;
-}
-
-.header-ice-cream__img {
-   max-width: 177px;
-   position: absolute;
-   bottom: 0;
-   right: 60px;
-   
-}
-
-.header-btn__products,
-.header-btn__made {
-   color: var(--text-color);
+.header-link__prodcts,
+.header-link__made {
    font-family: Montserrat;
    font-size: 12px;
    font-weight: 600;
    background-color: var(--primary-background-color);
-   width: 108px;
-   height: 38px;
    border-radius: 8px;
-   border: 2px solid var(--primary-yelow-color);
 }
 
-.header-btn__made {
+.header-link__prodcts {
+   color: var(--text-color);
+   padding: 11px 26px;
+   border: 2px solid var(--primary-yelow-color);
+   cursor: pointer;
+
+   &:hover {
+         border: 2px solid var(--alt-button-color);  
+      }
+}
+
+.header-link__made {
    color: var(--primary-yelow-color);
    text-decoration-line: underline;
-   width: 118px;
+   padding: 11px 19px;
    margin-left: 4px;
    border: none;
+   cursor: pointer;
+
+   &:hover {
+      color: var(--alt-button-color);  
+   }
+
+   &:focus {
+      color: var(--alt-white-color);  
+   }
+}
+
+.header-img-thumb {
+   position: relative;
+}
+
+.header-points__img {
+   min-width: 320px;
+   position: absolute;
+   bottom: 0;
+   right: -20px;
+   pointer-events: none;
+}
+
+.header-ice-cream__img {
+   width: 177px;
+   position: absolute;
+   bottom: 0;
+   right: 40px;
+   pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+   .btn-buynow__tab,
+   .header-arrow,
+   .header-text,
+   .header-ice-cream-plate__img,
+   .our-outlets_list {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 480px) {
+   .header {
+      padding-top: 14px;
+   }
+
+   .header-nav {
+      margin-bottom: 40px;
+   }
+
+   .logo {
+      width: 48px;
+      height: 44px;
+   }
+
+   .header-btn-list {
+      margin-bottom: 150px;
+   }
+
+   .header-points__img {
+      width: 330px;
+   }
+
+   .header-ice-cream__img {
+      width: 218px;
+      right: 20px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .header {
+      padding-top: 20px;
+   }
+
+   .header-nav {
+      margin-bottom: 14px;
+   }
+
+   .mobile-menu-btn {
+      margin-left: auto;
+   }
+
+   .btn-buynow__tab {
+      margin: 0;
+      margin-left: 32px;
+      cursor: pointer;
+   }
+
+   .header-title {
+      margin-bottom: 24px;
+   }
+
+   .header-btn-list {
+      margin-bottom: 39px;
+   }
+
+   .header-text {
+      font-family: DM Sans;
+      font-size: 12px;
+      line-height: 1.4em;
+      color: var(--primary-white-color);
+      width: 178px;
+      margin-left: 184px;
+      margin-bottom: 29px;
+   }
+
+   .header-arrow {
+      display: inline-block;
+      width: 40px;
+      height: 16px;
+      margin-left: 184px;
+      margin-bottom: 24px;
+      cursor: pointer;
+   }
+
+   .header-arrow__icon {   
+      fill: var(--alt-white-color);
+   }
+
+   .header-points__img {
+      min-width: 768px;
+      right: -32px;
+   }
+
+   .header-ice-cream__img {
+      width: 268px;
+      right: 60px;
+   }
+
+   .header-ice-cream-plate__img {
+      position: absolute;
+      width: 152px;
+      bottom: 12px;
+      left: 0;
+      pointer-events: none;
+   }
+
+   .our-outlets_list {
+      position: absolute;
+      bottom: 205;
+      right: 0;
+      text-align: right;
+   }
+
+   .our-outlets_items:first-child {
+      margin-bottom: var(--card-gap);
+   }
+
+   .number {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 4px;
+   }
+
+   .category {
+      font-size: 8px;
+      color: var(--alt-white-color);
+   }
+}
+
+@media screen and (max-width: 1199px) {
+   .menu-nav__list-desk {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .header {
+      padding-top: 8px;
+   }
+
+   .header-nav {
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-bottom: 45px;
+   }
+
+   .logo {
+      width: 60px;
+      height: 65px;
+   }
+
+   .menu-nav__list {
+      margin-top: 32px;
+      margin-bottom: 13px;
+   
+      .menu-nav__item+.menu-nav__item {
+         margin-top: 0;
+      }
+   }
+
+   .menu-nav__list-desk {
+      display: flex;
+      gap: 28px;
+      margin-left: 308px;
+   }
+
+   .menu-nav__item .link {
+      font-size: 16px;
+      line-height: normal;
+      
+      &:hover,
+      &:focus {
+         color: var(--primary-yelow-color);
+         cursor: pointer;
+      }
+   }
+
+   .mobile-menu-btn {
+      display: none;
+   }
+
+   .btn-buynow__tab {
+      margin-left: auto;
+      margin-right: 0;
+      cursor: pointer;
+   }
+
+   .header-title {
+      font-size: 38px;
+      max-width: 367px;
+      margin-bottom: 28px;
+   }
+
+   .header-btn-list {
+      margin-bottom: 109px;
+   }
+
+   .header-link__made,
+   .header-link__prodcts {
+      font-size: 14px;
+      line-height: 1.286em;
+      cursor: pointer;
+   }
+
+   .header-link__made {
+      padding: 12px 34px;
+   }
+
+   .header-link__prodcts {
+      padding: 12px 24px;
+      margin-left: 12px;
+   }
+
+   .header-text {
+      font-size: 14px;
+      line-height: 1.4em;
+      width: 210px;
+      margin-left: 241px;
+      margin-bottom: 24px;
+   }
+
+   .header-arrow {
+      margin-left: 241px;
+      margin-bottom: 103px;
+   }
+
+   .header-points__img {
+      min-width: 1200px;
+      right: -16px;
+   }
+
+   .header-ice-cream__img {
+      width: 458px;
+      right: 76px;
+   }
+
+   .header-ice-cream-plate__img {
+      width: 225px;
+      bottom: 65px;  
+   }
+
+   .our-outlets_list {
+      line-height: normal;
+      bottom: 368px;
+      right: 0;
+   }
+   
+   .our-outlets_items:first-child {
+      margin-bottom: 16px;
+   }
+   
+   .number {
+      font-size: 46px;
+      margin-bottom: 4px;
+   }
+   
+   .category {
+      font-size: 14px;
+   }
 }

@@ -19,10 +19,6 @@ body {
     letter-spacing: 0.04em;
 }
 
-main {
-    position: relative;
-}
-
 h1,
 h2,
 h3,
@@ -41,6 +37,10 @@ img {
     height: auto;
 }
 
+button {
+    padding: 0;
+}
+
 .list {
     margin: 0;
     padding: 0;
@@ -57,4 +57,3 @@ img {
     text-decoration: none;
     transition: color var(--time-animation) var(--timing-function);
 }
-

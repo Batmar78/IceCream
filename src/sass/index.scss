@@ -1,11 +1,19 @@
 @import './utils/variables';
-@import './utils/visually-hadden';
+@import './utils/visually-hidden';
 
 @import './base/common';
 @import './base/container';
 @import './base/section';
 
+@import './components/captioned-gallery';
 @import './components/menu-nav';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/modal-buynow';
+@import './components/modal-products';
+@import './components/modal-readmore';
+@import './components/modal-locations';
+@import './components/modal-franchise';
 
 @import './layout/about';
 @import './layout/advantages';

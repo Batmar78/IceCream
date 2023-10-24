@@ -1,48 +1,55 @@
-.customer-reviews {
-    
+.customer-reviews { 
     padding-top: 178px;
     padding-bottom: 413px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     background-color: var(--alt-white-color);
     background-image: url("./../images/products_bacgr_mob.png");
     background-size: cover;
     background-repeat: no-repeat;
-        
+    text-align: center;     
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .customer-reviews {
+        background-image: url('./../images/products_bacgr_mob@2x.png');
+
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+screen and (min-resolution: 288dpi),
+screen and (min-resolution: 3dppx) {
+    .customer-reviews {
+        background-image: url('./../images/products_bacgr_mob@3x.png');
+    }
 }
 
 .customer-reviews__slider {
     max-width: 280px;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;   
 }
 
 .customer-photo {
-    max-width: 85px;
+   max-width: 85px;
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 32px;
    border-radius: 50%;
-
 }
 
 .customer-reviews__text {
     max-width: 280px;
     min-height: 256px;
     padding: 35px 39px;
-    
-    
     margin-bottom: 32px;
     color: var(--alt-white-color);
     font-size: 12px;
-    line-height: 255%;
-
+    line-height: 2.55em;
     background-color: var(--primary-background-color);
     border-radius: 10px; 
-
 }
 
 .customer-reviews__title {
@@ -50,6 +57,103 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 186%;
-
 }
 
+@media screen and (min-width: 480px) {
+    .customer-reviews {
+        padding-top: 235px;
+        padding-bottom: 409px;
+        background-image: url('./../images/products_bacgr_mob_480.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .customer-reviews {
+            background-image: url('./../images/products_bacgr_mob_480@2x.png');
+        }
+    }
+    
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .customer-reviews {
+            background-image: url('./../images/products_bacgr_mob_480@3x.png');
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customer-reviews {
+        padding-top: 283px;
+        padding-bottom: 369px;
+        background-image: url('./../images/products_bacgr_tab.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .customer-reviews {
+            background-image: url('./../images/products_bacgr_tab@2x.png');
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .customer-reviews {
+            background-image: url('./../images/products_bacgr_tab@3x.png');
+        }
+    }
+
+    .customer-reviews__slider {
+        max-width: 100%;
+    }
+
+    .customer-reviews__text {
+        max-width: 100%;
+        min-height: 138px;
+        padding: 28px 80px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.86em;
+    }
+
+    .customer-reviews__title {
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customer-reviews {
+        padding-top: 464px;
+        padding-bottom: 228px;
+        background-image: url('./../images/products_bacgr_desk.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .customer-reviews {
+            background-image: url('./../images/products_bacgr_desk@2x.png');
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .customer-reviews {
+            background-image: url('./../images/products_bacgr_desk@3x.png');
+        }
+    }
+
+    .customer-reviews__slider {
+        width: 968px;
+    }
+
+    .customer-reviews__text {
+        padding: 43px 73px;
+        font-size: 16px;  
+    }
+}

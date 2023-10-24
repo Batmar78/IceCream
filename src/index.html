@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
 
@@ -71,173 +71,253 @@
               src="./images/logo_mob.png"
               alt="Логотип IceCream"
           /></picture>
+          <ul class="menu-nav__list menu-nav__list-desk list">
+            <li class="menu-nav__item">
+              <a href="./index.html" class="menu-nav_link-home link">Home</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="#about" class="menu-nav_link-about link"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a href="#products" class="menu-nav__link-products link"
+                >Our products</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a href="#contacts" class="menu-nav__link-contacts link"
+                >Contact</a
+              >
+            </li>
+          </ul>
           <button type="button" class="mobile-menu-btn js-open-menu">
             <svg class="mobile-menu__icon">
               <use href="./images/sprite.svg#icon-mobile_menu"></use>
             </svg>
           </button>
+          <button
+            data-buynow-open
+            type="button"
+            class="btn-buynow btn-buynow__tab"
+          >
+            Buy now
+            <svg class="btn-buynow__icon">
+              <use href="./images/sprite.svg#icon-more"></use>
+            </svg>
+          </button>
         </nav>
+
         <h1 class="header-title">
           ice cream made with
           <span class="header-title__passion">passion</span>
         </h1>
         <ul class="header-btn-list list">
           <li>
-            <a class="header-link__prodcts link" href="#">
-              <button type="button" class="header-btn__products">
-                Products
-              </button>
-            </a>
+            <a class="header-link__prodcts link" href="#products"> Products </a>
           </li>
           <li>
-            <a class="header-link__made link" href="#">
-              <button type="button" class="header-btn__made">
-                How it’s made?
-              </button>
-            </a>
+            <a class="header-link__made link" href="#about"> How it’s made? </a>
           </li>
         </ul>
-        <picture>
-          <source
-            srcset="
-              ./images/points_mobile.webp    1x,
-              ./images/points_mobile@2x.webp 2x,
-              ./images/points_mobile@3x.webp 3x
-            "
-            type="image/webp"
-            media="(max-width: 479px)"
-          />
-          <source
-            srcset="
-              ./images/points_mobile.png    1x,
-              ./images/points_mobile@2x.png 2x,
-              ./images/points_mobile@3x.png 3x
-            "
-            media="(max-width: 479px)"
-          />
-          <source
-            srcset="
-              ./images/points_mobile_480.webp    1x,
-              ./images/points_mobile_480@2x.webp 2x,
-              ./images/points_mobile_480@3x.webp 3x
-            "
-            type="image/webp"
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="
-              ./images/points_mobile_480.png    1x,
-              ./images/points_mobile_480@2x.png 2x,
-              ./images/points_mobile_480@3x.png 3x
-            "
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="
-              ./images/points_tablet.webp    1x,
-              ./images/points_tablet@2x.webp 2x,
-              ./images/points_tablet@3x.webp 3x
-            "
-            type="image/webp"
-            media="(max-width: 1199px)"
-          />
-          <source
-            srcset="
-              ./images/points_tablet.png    1x,
-              ./images/points_tablet@2x.png 2x,
-              ./images/points_tablet@3x.png 3x
-            "
-            media="(max-width: 1199px)"
-          />
-          <source
-            srcset="
-              ./images/points_desktop.webp    1x,
-              ./images/points_desktop@2x.webp 2x,
-              ./images/points_desktop@3x.webp 3x
-            "
-            type="image/webp"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/points_desktop.png    1x,
-              ./images/points_desktop@2x.png 2x,
-              ./images/points_desktop@3x.png 3x
-            "
-            media="(min-width: 1200px)"
-          />
-          <img
-            class="header-points__img"
-            src="./images/points_mobile.png"
-            alt="Жовті крапки"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              ./images/ice_cream_header_mobile.webp    1x,
-              ./images/ice_cream_header_mobile@2x.webp 2x,
-              ./images/ice_cream_header_mobile@3x.webp 3x
-            "
-            type="image/webp"
-            media="(max-width: 479px)" />
-          <source
-            srcset="
-              ./images/ice_cream_header_mobile.png    1x,
-              ./images/ice_cream_header_mobile@2x.png 2x,
-              ./images/ice_cream_header_mobile@3x.png 3x
-            "
-            media="(max-width: 479px)" />
-          <source
-            srcset="
-              ./images/ice_cream_header_mobile_480.webp    1x,
-              ./images/ice_cream_header_mobile_480@2x.webp 2x,
-              ./images/ice_cream_header_mobile_480@3x.webp 3x
-            "
-            type="image/webp"
-            media="(max-width: 767px)" />
-          <source
-            srcset="
-              ./images/ice_cream_header_mobile_480.png    1x,
-              ./images/ice_cream_header_mobile_480@2x.png 2x,
-              ./images/ice_cream_header_mobile_480@3x.png 3x
-            "
-            media="(max-width: 767px)" />
-          <source
-            srcset="
-              ./images/ice_cream_header_tablet.webp    1x,
-              ./images/ice_cream_header_tablet@2x.webp 2x,
-              ./images/ice_cream_header_tablet@3x.webp 3x
-            "
-            type="image/webp"
-            media="(max-width: 1199px)" />
-          <source
-            srcset="
-              ./images/ice_cream_header_tablet.png    1x,
-              ./images/ice_cream_header_tablet@2x.png 2x,
-              ./images/ice_cream_header_tablet@3x.png 3x
-            "
-            media="(max-width: 1199px)" />
-          <source
-            srcset="
-              ./images/ice_cream_header_desktop.webp    1x,
-              ./images/ice_cream_header_desktop@2x.webp 2x,
-              ./images/ice_cream_header_desktop@3x.webp 3x
-            "
-            type="image/webp"
-            media="(min-width: 1200px)" />
-          <source
-            srcset="
-              ./images/ice_cream_header_desktop.png    1x,
-              ./images/ice_cream_header_desktop@2x.png 2x,
-              ./images/ice_cream_header_desktop@3x.png 3x
-            "
-            media="(min-width: 1200px)" />
-          <img
-            class="header-ice-cream__img"
-            src="./images/ice_cream_header_mobile.png"
-            alt="Морозиво"
-        /></picture>
+        <p class="header-text">
+          Indulge in a scoop of ice cream made with passion and treat your taste
+          buds to an unforgettable experience!
+        </p>
+        <a href="#" class="products-arrow header-arrow" aria-label="Перейти">
+          <svg class="products-arrow__icon header-arrow__icon">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </a>
+        <div class="header-img-thumb">
+          <ul class="our-outlets_list list">
+            <li class="our-outlets_items">
+              <p class="number">16</p>
+              <p class="category">cafes</p>
+            </li>
+            <li class="our-outlets_items">
+              <p class="number">23</p>
+              <p class="category">food truck</p>
+            </li>
+          </ul>
+          <picture>
+            <source
+              srcset="
+                ./images/points_mobile.webp    1x,
+                ./images/points_mobile@2x.webp 2x,
+                ./images/points_mobile@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 479px)"
+            />
+            <source
+              srcset="
+                ./images/points_mobile.png    1x,
+                ./images/points_mobile@2x.png 2x,
+                ./images/points_mobile@3x.png 3x
+              "
+              media="(max-width: 479px)"
+            />
+            <source
+              srcset="
+                ./images/points_mobile_480.webp    1x,
+                ./images/points_mobile_480@2x.webp 2x,
+                ./images/points_mobile_480@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/points_mobile_480.png    1x,
+                ./images/points_mobile_480@2x.png 2x,
+                ./images/points_mobile_480@3x.png 3x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/points_tablet.webp    1x,
+                ./images/points_tablet@2x.webp 2x,
+                ./images/points_tablet@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/points_tablet.png    1x,
+                ./images/points_tablet@2x.png 2x,
+                ./images/points_tablet@3x.png 3x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/points_desktop.webp    1x,
+                ./images/points_desktop@2x.webp 2x,
+                ./images/points_desktop@3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/points_desktop.png    1x,
+                ./images/points_desktop@2x.png 2x,
+                ./images/points_desktop@3x.png 3x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="header-points__img"
+              src="./images/points_mobile.png"
+              alt="Жовті крапки"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./images/ice_cream_header_mobile.webp    1x,
+                ./images/ice_cream_header_mobile@2x.webp 2x,
+                ./images/ice_cream_header_mobile@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 479px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_mobile.png    1x,
+                ./images/ice_cream_header_mobile@2x.png 2x,
+                ./images/ice_cream_header_mobile@3x.png 3x
+              "
+              media="(max-width: 479px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_mobile_480.webp    1x,
+                ./images/ice_cream_header_mobile_480@2x.webp 2x,
+                ./images/ice_cream_header_mobile_480@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 767px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_mobile_480.png    1x,
+                ./images/ice_cream_header_mobile_480@2x.png 2x,
+                ./images/ice_cream_header_mobile_480@3x.png 3x
+              "
+              media="(max-width: 767px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_tablet.webp    1x,
+                ./images/ice_cream_header_tablet@2x.webp 2x,
+                ./images/ice_cream_header_tablet@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 1199px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_tablet.png    1x,
+                ./images/ice_cream_header_tablet@2x.png 2x,
+                ./images/ice_cream_header_tablet@3x.png 3x
+              "
+              media="(max-width: 1199px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_desktop.webp    1x,
+                ./images/ice_cream_header_desktop@2x.webp 2x,
+                ./images/ice_cream_header_desktop@3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_desktop.png    1x,
+                ./images/ice_cream_header_desktop@2x.png 2x,
+                ./images/ice_cream_header_desktop@3x.png 3x
+              "
+              media="(min-width: 1200px)" />
+            <img
+              class="header-ice-cream__img"
+              src="./images/ice_cream_header_mobile.png"
+              alt="Морозиво"
+          /></picture>
+          <picture>
+            <source
+              srcset="
+                ./images/ice_cream_header_tablet_plate.webp    1x,
+                ./images/ice_cream_header_tablet_plate@2x.webp 2x,
+                ./images/ice_cream_header_tablet_plate@3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width: 1199px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_tablet_plate.png    1x,
+                ./images/ice_cream_header_tablet_plate@2x.png 2x,
+                ./images/ice_cream_header_tablet_plate@3x.png 3x
+              "
+              media="(max-width: 1199px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_desktop_plate.webp    1x,
+                ./images/ice_cream_header_desktop_plate@2x.webp 2x,
+                ./images/ice_cream_header_desktop_plate@3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ./images/ice_cream_header_desktop_plate.png    1x,
+                ./images/ice_cream_header_desktop_plate@2x.png 2x,
+                ./images/ice_cream_header_desktop_plate@3x.png 3x
+              "
+              media="(min-width: 1200px)" />
+            <img
+              class="header-ice-cream-plate__img"
+              src="./images/ice_cream_header_tablet_plate.png"
+              alt="Морозиво в тарілці"
+          /></picture>
+        </div>
       </div>
 
       <div class="menu-nav container js-menu-container">
@@ -299,7 +379,7 @@
             </svg>
           </button>
         </nav>
-        <ul class="menu-nav__list list">
+        <ul class="menu-nav__list list js-menu-nav">
           <li class="menu-nav__item">
             <a href="./index.html" class="menu-nav_link-home link">Home</a>
           </li>
@@ -315,9 +395,9 @@
             <a href="#contacts" class="menu-nav__link-contacts link">Contact</a>
           </li>
         </ul>
-        <button type="button" class="btn_buynow">
+        <button data-modalbuynow-open type="button" class="btn-buynow">
           Buy now
-          <svg class="btn_buynow__icon">
+          <svg class="btn-buynow__icon">
             <use href="./images/sprite.svg#icon-more"></use>
           </svg>
         </button>
@@ -328,12 +408,8 @@
       <!--  Products  -->
       <section class="products section" id="products">
         <div class="container">
-          <div class="products-title__thumb">
-            <label for="products-title" class="products-title__label">
-              100% NATURAL
-            </label>
-            <h2 class="products-title title" id="products-title">PRODUCTS</h2>
-          </div>
+          <p class="products-title__label">100% NATURAL</p>
+          <h2 class="products-title title">PRODUCTS</h2>
 
           <ul class="products-list list">
             <li class="products-card card-icecream">
@@ -342,7 +418,12 @@
                 Soft ice cream with a delicate taste. Made with milk, cream,
                 sugar and natural stabilizer
               </p>
-              <a href="#" class="products-arrow" aria-label="Перейти">
+              <a
+                data-modalproducts-open
+                href="#"
+                class="products-arrow"
+                aria-label="Перейти"
+              >
                 <svg class="products-arrow__icon">
                   <use href="./images/sprite.svg#icon-arrow"></use>
                 </svg>
@@ -380,79 +461,89 @@
       <section class="about section" id="about">
         <div class="container">
           <div class="about-title__thumb">
-            <label class="about-title__label" for="about-title">
-              TRADITION AND LOVE
-            </label>
-            <h2 class="about-title title" id="about-title">HOW IT'S MADE?</h2>
+            <p class="about-title__label">TRADITION AND LOVE</p>
+            <h2 class="about-title title">HOW IT'S MADE?</h2>
           </div>
+          <div class="about-contents">
+            <div class="about-cow-image__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about_cow_mob.webp    1x,
+                    ./images/about_cow_mob@2x.webp 2x,
+                    ./images/about_cow_mob@3x.webp 3x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/about_cow_mob.png    1x,
+                    ./images/about_cow_mob@2x.png 2x,
+                    ./images/about_cow_mob@3x.png 3x
+                  "
+                  media="(max-width: 767px)" />
 
-          <picture>
-            <source
-              srcset="
-                ./images/about_cow_mob.webp    1x,
-                ./images/about_cow_mob@2x.webp 2x,
-                ./images/about_cow_mob@3x.webp 3x
-              "
-              type="image/webp"
-              media="(max-width: 767px)" />
-            <source
-              srcset="
-                ./images/about_cow_mob.png    1x,
-                ./images/about_cow_mob@2x.png 2x,
-                ./images/about_cow_mob@3x.png 3x
-              "
-              media="(max-width: 767px)" />
-
-            <source
-              srcset="
-                ./images/about_cow_tab.webp    1x,
-                ./images/about_cow_tab@2x.webp 2x,
-                ./images/about_cow_tab@3x.webp 3x
-              "
-              type="image/webp"
-              media="(max-width: 1199px)" />
-            <source
-              srcset="
-                ./images/about_cow_tab.png    1x,
-                ./images/about_cow_tab@2x.png 2x,
-                ./images/about_cow_tab@3x.png 3x
-              "
-              media="(max-width: 1199px)" />
-            <source
-              srcset="
-                ./images/about_cow_desk.webp    1x,
-                ./images/about_cow_desk@2x.webp 2x,
-                ./images/about_cow_desk@3x.webp 3x
-              "
-              type="image/webp"
-              media="(min-width: 1200px)" />
-            <source
-              srcset="
-                ./images/about_cow_desk.png    1x,
-                ./images/about_cow_desk@2x.png 2x,
-                ./images/about_cow_desk@3x.png 3x
-              "
-              media="(min-width: 1200px)" />
-            <img
-              class="about-cow__img"
-              src="./images/about_cow_mob.png"
-              alt="Корова"
-          /></picture>
-          <div class="about-text">
-            <p>
-              Ice is a place where you will become not only a little happier,
-              but also healthier. Health is the main value for us, and we follow
-              it when creating our handmade desserts.
-            </p>
-            <p>
-              We use traditional recipes and 100% natural ingredients. Our
-              products are so natural that they can be given to children from
-              the age of three years. Sweets lovers can expect 55 types of ice
-              cream, 15 types of coffee and 23 milkshakes.
-            </p>
-            <p>This is enough to choose ice cream and coffee for any mood!</p>
+                <source
+                  srcset="
+                    ./images/about_cow_tab.webp    1x,
+                    ./images/about_cow_tab@2x.webp 2x,
+                    ./images/about_cow_tab@3x.webp 3x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)" />
+                <source
+                  srcset="
+                    ./images/about_cow_tab.png    1x,
+                    ./images/about_cow_tab@2x.png 2x,
+                    ./images/about_cow_tab@3x.png 3x
+                  "
+                  media="(max-width: 1199px)" />
+                <source
+                  srcset="
+                    ./images/about_cow_desk.webp    1x,
+                    ./images/about_cow_desk@2x.webp 2x,
+                    ./images/about_cow_desk@3x.webp 3x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/about_cow_desk.png    1x,
+                    ./images/about_cow_desk@2x.png 2x,
+                    ./images/about_cow_desk@3x.png 3x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  class="about-cow__img"
+                  src="./images/about_cow_mob.png"
+                  alt="Корова"
+              /></picture>
+            </div>
+            <div class="about-information">
+              <div class="about-text">
+                <p>
+                  Ice is a place where you will become not only a little
+                  happier, but also healthier. Health is the main value for us,
+                  and we follow it when creating our handmade desserts.
+                </p>
+                <p>
+                  We use traditional recipes and 100% natural ingredients. Our
+                  products are so natural that they can be given to children
+                  from the age of three years. Sweets lovers can expect 55 types
+                  of ice cream, 15 types of coffee and 23 milkshakes.
+                </p>
+                <p>
+                  This is enough to choose ice cream and coffee for any mood!
+                </p>
+              </div>
+              <button data-modalreadmore-open class="about-btn__readmore">
+                Read more
+                <svg class="btn-buynow__icon">
+                  <use href="./images/sprite.svg#icon-more"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-          <button class="about-btn__readmore">Read more</button>
         </div>
       </section>
       <!--  Advantages  -->
@@ -485,204 +576,318 @@
       <section class="gallery">
         <div class="container gallery-container">
           <div class="gallery-thumb">
-            <picture>
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_mob.webp    1x,
-                  ./images/gallery_icecream_one_mob@2x.webp 2x,
-                  ./images/gallery_icecream_one_mob@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 479px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_mob.jpg    1x,
-                  ./images/gallery_icecream_one_mob@2x.jpg 2x,
-                  ./images/gallery_icecream_one_mob@3x.jpg 3x
-                "
-                media="(max-width: 479px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_mob_480.webp    1x,
-                  ./images/gallery_icecream_one_mob_480@2x.webp 2x,
-                  ./images/gallery_icecream_one_mob_480@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 767px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_mob_480.jpg    1x,
-                  ./images/gallery_icecream_one_mob_480@2x.jpg 2x,
-                  ./images/gallery_icecream_one_mob_480@3x.jpg 3x
-                "
-                media="(max-width: 767px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_tab.webp    1x,
-                  ./images/gallery_icecream_one_tab@2x.webp 2x,
-                  ./images/gallery_icecream_one_tab@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 1199px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_tab.jpg    1x,
-                  ./images/gallery_icecream_one_tab@2x.jpg 2x,
-                  ./images/gallery_icecream_one_tab@3x.jpg 3x
-                "
-                media="(max-width: 1199px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_desk.webp    1x,
-                  ./images/gallery_icecream_one_desk@2x.webp 2x,
-                  ./images/gallery_icecream_one_desk@3x.webp 3x
-                "
-                type="image/webp"
-                media="(min-width: 1200px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_one_desk.jpg    1x,
-                  ./images/gallery_icecream_one_desk@2x.jpg 2x,
-                  ./images/gallery_icecream_one_desk@3x.jpg 3x
-                "
-                media="(min-width: 1200px)" />
-              <img
-                class="gallery_icecream_one__img gallery_icecream"
-                src="./images/gallery_icecream_one_mob.jpg"
-                alt="Морозиво"
-            /></picture>
-            <picture>
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_mob.webp    1x,
-                  ./images/gallery_icecream_two_mob@2x.webp 2x,
-                  ./images/gallery_icecream_two_mob@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 479px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_mob.jpg    1x,
-                  ./images/gallery_icecream_two_mob@2x.jpg 2x,
-                  ./images/gallery_icecream_two_mob@3x.jpg 3x
-                "
-                media="(max-width: 479px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_mob_480.webp    1x,
-                  ./images/gallery_icecream_two_mob_480@2x.webp 2x,
-                  ./images/gallery_icecream_two_mob_480@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 767px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_mob_480.jpg    1x,
-                  ./images/gallery_icecream_two_mob_480@2x.jpg 2x,
-                  ./images/gallery_icecream_two_mob_480@3x.jpg 3x
-                "
-                media="(max-width: 767px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_tab.webp    1x,
-                  ./images/gallery_icecream_two_tab@2x.webp 2x,
-                  ./images/gallery_icecream_two_tab@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 1199px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_tab.jpg    1x,
-                  ./images/gallery_icecream_two_tab@2x.jpg 2x,
-                  ./images/gallery_icecream_two_tab@3x.jpg 3x
-                "
-                media="(max-width: 1199px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_desk.webp    1x,
-                  ./images/gallery_icecream_two_desk@2x.webp 2x,
-                  ./images/gallery_icecream_two_desk@3x.webp 3x
-                "
-                type="image/webp"
-                media="(min-width: 1200px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_two_desk.jpg    1x,
-                  ./images/gallery_icecream_two_desk@2x.jpg 2x,
-                  ./images/gallery_icecream_two_desk@3x.jpg 3x
-                "
-                media="(min-width: 1200px)" />
-              <img
-                class="gallery_icecream_two__img gallery_icecream visually-hidden"
-                src="./images/gallery_icecream_two_mob.jpg"
-                alt="Морозиво"
-            /></picture>
-            <picture>
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_mob.webp    1x,
-                  ./images/gallery_icecream_three_mob@2x.webp 2x,
-                  ./images/gallery_icecream_three_mob@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 479px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_mob.jpg    1x,
-                  ./images/gallery_icecream_three_mob@2x.jpg 2x,
-                  ./images/gallery_icecream_three_mob@3x.jpg 3x
-                "
-                media="(max-width: 479px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_mob_480.webp    1x,
-                  ./images/gallery_icecream_three_mob_480@2x.webp 2x,
-                  ./images/gallery_icecream_three_mob_480@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 767px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_mob_480.jpg    1x,
-                  ./images/gallery_icecream_three_mob_480@2x.jpg 2x,
-                  ./images/gallery_icecream_three_mob_480@3x.jpg 3x
-                "
-                media="(max-width: 767px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_tab.webp    1x,
-                  ./images/gallery_icecream_three_tab@2x.webp 2x,
-                  ./images/gallery_icecream_three_tab@3x.webp 3x
-                "
-                type="image/webp"
-                media="(max-width: 1199px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_tab.jpg    1x,
-                  ./images/gallery_icecream_three_tab@2x.jpg 2x,
-                  ./images/gallery_icecream_three_tab@3x.jpg 3x
-                "
-                media="(max-width: 1199px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_desk.webp    1x,
-                  ./images/gallery_icecream_three_desk@2x.webp 2x,
-                  ./images/gallery_icecream_three_desk@3x.webp 3x
-                "
-                type="image/webp"
-                media="(min-width: 1200px)" />
-              <source
-                srcset="
-                  ./images/gallery_icecream_three_desk.jpg    1x,
-                  ./images/gallery_icecream_three_desk@2x.jpg 2x,
-                  ./images/gallery_icecream_three_desk@3x.jpg 3x
-                "
-                media="(min-width: 1200px)" />
-              <img
-                class="gallery_icecream_three__img gallery_icecream visually-hidden"
-                src="./images/gallery_icecream_three_mob.jpg"
-                alt="Морозиво"
-            /></picture>
+            <div id="captioned-gallery">
+              <figure class="slider">
+                <figure>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_mob.webp    1x,
+                        ./images/gallery_icecream_one_mob@2x.webp 2x,
+                        ./images/gallery_icecream_one_mob@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_mob.jpg    1x,
+                        ./images/gallery_icecream_one_mob@2x.jpg 2x,
+                        ./images/gallery_icecream_one_mob@3x.jpg 3x
+                      "
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_mob_480.webp    1x,
+                        ./images/gallery_icecream_one_mob_480@2x.webp 2x,
+                        ./images/gallery_icecream_one_mob_480@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_mob_480.jpg    1x,
+                        ./images/gallery_icecream_one_mob_480@2x.jpg 2x,
+                        ./images/gallery_icecream_one_mob_480@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_tab.webp    1x,
+                        ./images/gallery_icecream_one_tab@2x.webp 2x,
+                        ./images/gallery_icecream_one_tab@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_tab.jpg    1x,
+                        ./images/gallery_icecream_one_tab@2x.jpg 2x,
+                        ./images/gallery_icecream_one_tab@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_desk.webp    1x,
+                        ./images/gallery_icecream_one_desk@2x.webp 2x,
+                        ./images/gallery_icecream_one_desk@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_one_desk.jpg    1x,
+                        ./images/gallery_icecream_one_desk@2x.jpg 2x,
+                        ./images/gallery_icecream_one_desk@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="gallery_icecream_one__img gallery_icecream"
+                      src="./images/gallery_icecream_one_mob.jpg"
+                      alt="Морозиво"
+                    />
+                  </picture>
+                </figure>
+                <figure>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob.webp    1x,
+                        ./images/gallery_icecream_two_mob@2x.webp 2x,
+                        ./images/gallery_icecream_two_mob@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob.jpg    1x,
+                        ./images/gallery_icecream_two_mob@2x.jpg 2x,
+                        ./images/gallery_icecream_two_mob@3x.jpg 3x
+                      "
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob_480.webp    1x,
+                        ./images/gallery_icecream_two_mob_480@2x.webp 2x,
+                        ./images/gallery_icecream_two_mob_480@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob_480.jpg    1x,
+                        ./images/gallery_icecream_two_mob_480@2x.jpg 2x,
+                        ./images/gallery_icecream_two_mob_480@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_tab.webp    1x,
+                        ./images/gallery_icecream_two_tab@2x.webp 2x,
+                        ./images/gallery_icecream_two_tab@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_tab.jpg    1x,
+                        ./images/gallery_icecream_two_tab@2x.jpg 2x,
+                        ./images/gallery_icecream_two_tab@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_desk.webp    1x,
+                        ./images/gallery_icecream_two_desk@2x.webp 2x,
+                        ./images/gallery_icecream_two_desk@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_desk.jpg    1x,
+                        ./images/gallery_icecream_two_desk@2x.jpg 2x,
+                        ./images/gallery_icecream_two_desk@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="gallery_icecream_two__img gallery_icecream"
+                      src="./images/gallery_icecream_two_mob.jpg"
+                      alt="Морозиво"
+                    />
+                  </picture>
+                </figure>
+                <figure>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_mob.webp    1x,
+                        ./images/gallery_icecream_three_mob@2x.webp 2x,
+                        ./images/gallery_icecream_three_mob@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_mob.jpg    1x,
+                        ./images/gallery_icecream_three_mob@2x.jpg 2x,
+                        ./images/gallery_icecream_three_mob@3x.jpg 3x
+                      "
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_mob_480.webp    1x,
+                        ./images/gallery_icecream_three_mob_480@2x.webp 2x,
+                        ./images/gallery_icecream_three_mob_480@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_mob_480.jpg    1x,
+                        ./images/gallery_icecream_three_mob_480@2x.jpg 2x,
+                        ./images/gallery_icecream_three_mob_480@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_tab.webp    1x,
+                        ./images/gallery_icecream_three_tab@2x.webp 2x,
+                        ./images/gallery_icecream_three_tab@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_tab.jpg    1x,
+                        ./images/gallery_icecream_three_tab@2x.jpg 2x,
+                        ./images/gallery_icecream_three_tab@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_desk.webp    1x,
+                        ./images/gallery_icecream_three_desk@2x.webp 2x,
+                        ./images/gallery_icecream_three_desk@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_three_desk.jpg    1x,
+                        ./images/gallery_icecream_three_desk@2x.jpg 2x,
+                        ./images/gallery_icecream_three_desk@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="gallery_icecream_three__img gallery_icecream"
+                      src="./images/gallery_icecream_three_mob.jpg"
+                      alt="Морозиво"
+                    />
+                  </picture>
+                </figure>
+                <figure>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob.webp    1x,
+                        ./images/gallery_icecream_two_mob@2x.webp 2x,
+                        ./images/gallery_icecream_two_mob@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob.jpg    1x,
+                        ./images/gallery_icecream_two_mob@2x.jpg 2x,
+                        ./images/gallery_icecream_two_mob@3x.jpg 3x
+                      "
+                      media="(max-width: 479px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob_480.webp    1x,
+                        ./images/gallery_icecream_two_mob_480@2x.webp 2x,
+                        ./images/gallery_icecream_two_mob_480@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_mob_480.jpg    1x,
+                        ./images/gallery_icecream_two_mob_480@2x.jpg 2x,
+                        ./images/gallery_icecream_two_mob_480@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_tab.webp    1x,
+                        ./images/gallery_icecream_two_tab@2x.webp 2x,
+                        ./images/gallery_icecream_two_tab@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_tab.jpg    1x,
+                        ./images/gallery_icecream_two_tab@2x.jpg 2x,
+                        ./images/gallery_icecream_two_tab@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_desk.webp    1x,
+                        ./images/gallery_icecream_two_desk@2x.webp 2x,
+                        ./images/gallery_icecream_two_desk@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery_icecream_two_desk.jpg    1x,
+                        ./images/gallery_icecream_two_desk@2x.jpg 2x,
+                        ./images/gallery_icecream_two_desk@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="gallery_icecream_two__img gallery_icecream"
+                      src="./images/gallery_icecream_two_mob.jpg"
+                      alt="Морозиво"
+                    />
+                  </picture>
+                </figure>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -830,13 +1035,12 @@
               </address>
             </li>
             <li class="contact-list__item">
-              <p class="contact__branch-category">FOODTRUCK</p>
+              <p class="contact__branch-category food-truck">FOODTRUCK</p>
               <address class="contact-address">
                 <ul class="contact-address-list list">
                   <li class="contact-address-list__item-city">Los Angeles</li>
                   <li class="contact-address-list__item-address">
-                    1003 Manhattan Ave, Manhattan<br />
-                    Beach, CA 90263, USA
+                    1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
                   </li>
                 </ul>
               </address>
@@ -900,59 +1104,381 @@
               </address>
             </li>
           </ul>
-          <button type="button" class="contact-btn__location contact-btn">
-            Our Locations
-          </button>
-          <button type="button" class="contact-btn__franshise contact-btn">
-            Franchise
-          </button>
+          <div class="contact-btns">
+            <button
+              data-modallocation-open
+              type="button"
+              class="contact-btn__location contact-btn"
+            >
+              Our Locations
+              <svg class="btn-buynow__icon">
+                <use href="./images/sprite.svg#icon-more"></use>
+              </svg>
+            </button>
+            <button
+              data-modalfranchise-open
+              type="button"
+              class="contact-btn__franshise contact-btn"
+            >
+              Franchise
+              <svg class="btn-buynow__icon">
+                <use href="./images/sprite.svg#icon-more"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
+      <div class="modal-thumb">
+        <div class="backdrop is-hidden" data-modalbuynow>
+          <div class="modal modal-buynow">
+            <button
+              data-modalbuynow-close
+              type="button"
+              class="modal__btn-close"
+            >
+              <svg class="modal__icon-close" width="12px" height="12px">
+                <use href="./images/sprite.svg#icon-close_mobile_menu"></use>
+              </svg>
+            </button>
+            <h2 class="modal-title modal-buynow__title">Buy now</h2>
+            <ul class="modal-buynow__list list">
+              <li class="modal-buynow__item ice-cream">
+                <h3 class="modal-buynow__item-title">ice cream</h3>
+              </li>
+              <li class="modal-buynow__item ice-coffee">
+                <h3 class="modal-buynow__item-title">ice coffee</h3>
+              </li>
+              <li class="modal-buynow__item milkshake">
+                <h3 class="modal-buynow__item-title">milkshake</h3>
+              </li>
+            </ul>
+            <form class="modal-form modal-buynow__form">
+              <input
+                class="modal-form__input modal-buynow__form-input input-name"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                autocomplete="on"
+              />
+              <input
+                class="modal-form__input modal-buynow__form-input input-tel"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Phone"
+                autocomplete="on"
+              />
+              <textarea
+                class="modal-form__input modal-buynow__form-input input-textarea"
+                name="textarea"
+                id="textarea"
+                placeholder="Comment"
+              ></textarea>
+              <button
+                data-modalbuynow-submit
+                class="modal-form-btn__submit"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="backdrop is-hidden" data-modalproducts>
+          <div class="modal modal-products">
+            <button
+              data-modalproducts-close
+              type="button"
+              class="modal__btn-close"
+            >
+              <svg class="modal__icon-close" width="12px" height="12px">
+                <use href="./images/sprite.svg#icon-close_mobile_menu"></use>
+              </svg>
+            </button>
+            <h2 class="modal-title modal-products__title">
+              Chocolate icecream
+            </h2>
+            <picture>
+              <source
+                srcset="
+                  ./images/ingredients_icecream.webp    1x,
+                  ./images/ingredients_icecream@2x.webp 2x,
+                  ./images/ingredients_icecream@3x.webp 3x
+                "
+                type="image/webp"
+                media="(min-width: 1px)" />
+              <source
+                srcset="
+                  ./images/ingredients_icecream.png    1x,
+                  ./images/ingredients_icecream@2x.png 2x,
+                  ./images/ingredients_icecream@3x.png 3x
+                "
+                media="(min-width: 1px)" />
+              <img
+                class="modal-products__img"
+                src="./images/ingredients_icecream.png"
+                alt="Морозиво"
+                width="188"
+                height="188"
+            /></picture>
+            <ul class="nutritional-value__list list">
+              <li class="nutritional-value__item">
+                <p class="nutritional-value__components-value">320</p>
+                <p class="nutritional-value__components">kcal</p>
+              </li>
+              <li class="nutritional-value__item">
+                <p class="nutritional-value__components-value">4g</p>
+                <p class="nutritional-value__components">Prote...</p>
+              </li>
+              <li class="nutritional-value__item">
+                <p class="nutritional-value__components-value">8,2g</p>
+                <p class="nutritional-value__components">Fats</p>
+              </li>
+              <li class="nutritional-value__item">
+                <p class="nutritional-value__components-value">40,4g</p>
+                <p class="nutritional-value__components">Carbs</p>
+              </li>
+            </ul>
+            <h3 class="modal-products__title-ingredients">Ingredients</h3>
+            <ul class="modal-products__ingredients-list list">
+              <li class="modal-products__ingredients-item">
+                <p>Milk</p>
+                <p>100ml</p>
+              </li>
+              <li class="modal-products__ingredients-item">
+                <p>Belgian chocolate</p>
+                <p>20g</p>
+              </li>
+              <li class="modal-products__ingredients-item">
+                <p>Cream</p>
+                <p>150 ml</p>
+              </li>
+              <li class="modal-products__ingredients-item">
+                <p>Cocoa powder</p>
+                <p>30g</p>
+              </li>
+              <li class="modal-products__ingredients-item">
+                <p>Sugar</p>
+                <p>40g</p>
+              </li>
+              <li class="modal-products__ingredients-item">
+                <p>Vanilla sugar</p>
+                <p>10g</p>
+              </li>
+            </ul>
+            <form class="modal-form modal-products__form">
+              <input
+                class="modal-form__input modal-products__form-input input-name"
+                type="text"
+                name="name"
+                id="nameProdukts"
+                placeholder="Name"
+                autocomplete="on"
+              />
+              <input
+                class="modal-form__input modal-products__form-input input-tel"
+                type="tel"
+                name="tel"
+                id="telProdukts"
+                placeholder="Phone"
+                autocomplete="on"
+              />
+              <textarea
+                class="modal-form__input modal-products__form-input input-textarea"
+                name="textarea"
+                id="textareaProdukts"
+                placeholder="Comment"
+              ></textarea>
+              <button
+                data-modalproducts-submit
+                class="modal-form-btn__submit"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="backdrop backdrop-readmore is-hidden" data-modalreadmore>
+          <div class="modal modal-readmore">
+            <button
+              data-modalreadmore-close
+              type="button"
+              class="modal__btn-close"
+            >
+              <svg class="modal__icon-close" width="12px" height="12px">
+                <use href="./images/sprite.svg#icon-close_mobile_menu"></use>
+              </svg>
+            </button>
+            <h2 class="modal-title modal-readmore__title">How it’s made?</h2>
+            <iframe
+              class="modal-readmore__video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/OCxSuVLpXDc?si=xZH52V0DRs0OX7Sz"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="modal-readmore__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+              consequatur est accusamus, consequuntur perferendis iure non
+              voluptatibus placeat sint quam officiis molestiae dolores quidem
+              recusandae sapiente. Ratione error illum recusandae.
+            </p>
+          </div>
+        </div>
+        <div class="backdrop backdrop-location is-hidden" data-modallocation>
+          <div class="modal modal-location">
+            <button
+              data-modallocation-close
+              type="button"
+              class="modal__btn-close"
+            >
+              <svg class="modal__icon-close" width="12px" height="12px">
+                <use href="./images/sprite.svg#icon-close_mobile_menu"></use>
+              </svg>
+            </button>
+            <h2 class="modal-title modal-location__title">Our Locations</h2>
+            <iframe
+              class="modal-location__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.793457935582!2d-87.78231502348646!3d41.70339427633375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e39ad302b2c19%3A0xc808e9b14d04eb2b!2zMTAzNDAgUmlkZ2VsYW5kIEF2ZSwgQ2hpY2FnbyBSaWRnZSwgSUwgNjA0MTUsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1695154250800!5m2!1suk!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              class="btn-modal-location__map"
+              href="https://maps.app.goo.gl/n9QVVWkRPZWGoAAN9"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Open map
+            </a>
+          </div>
+        </div>
+        <div class="backdrop backdrop-franchise is-hidden" data-modalfranchise>
+          <div class="modal modal-franchise">
+            <button
+              data-modalfranchise-close
+              type="button"
+              class="modal__btn-close"
+            >
+              <svg class="modal__icon-close" width="12px" height="12px">
+                <use href="./images/sprite.svg#icon-close_mobile_menu"></use>
+              </svg>
+            </button>
+            <h2 class="modal-title modal-franchise__title">
+              Thank you for your interest in owning an Ice Cream shop
+            </h2>
+            <p class="modal-franchise__text">
+              Due to the overwhelming volume of franchise requests we are not
+              accepting new franchisee applications at this time. Once the
+              application process resumes, we will contact you for further
+              information. Please fill out the contact information below and we
+              will reach out for additional information. We appreciate your
+              patience.
+            </p>
+            <form class="modal-form modal-franchise__form">
+              <input
+                class="modal-form__input modal-franchise__form-input input-name"
+                type="text"
+                name="name"
+                id="nameFranchise"
+                placeholder="Name"
+                autocomplete="on"
+              />
+              <input
+                class="modal-form__input modal-franchise__form-input input-tel"
+                type="tel"
+                name="tel"
+                id="telFranchise"
+                placeholder="Phone"
+                autocomplete="on"
+              />
+              <input
+                class="modal-form__input modal-franchise__form-input input-email"
+                type="email"
+                name="email"
+                id="emailFranchise"
+                placeholder="Email"
+                autocomplete="on"
+              />
+              <textarea
+                class="modal-form__input modal-franchise__form-input input-textarea"
+                name="textarea"
+                id="textareaFranchise"
+                placeholder="Comment"
+              ></textarea>
+              <button
+                data-modalfranchise-submit
+                class="modal-form-btn__submit"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <!--  Footer  -->
     <footer class="footer">
       <div class="container">
-        <p class="foter-title__label">HOMEMADE ICE CREAM MADE</p>
-        <p class="foter-title">
-          WITH<br />
-          PASSION
-        </p>
-        <ul class="social-netwoks list">
-          <li class="social-netwoks__item">
-            <a class="social-netwoks__link link" href="#" aria-label="github">
-              <svg class="social-networks__icon" width="34px" height="34px">
-                <use href="./images/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-netwoks__item">
-            <a class="social-netwoks__link link" href="#" aria-label="telegram">
-              <svg class="social-networks__icon" width="34px" height="34px">
-                <use href="./images/sprite.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-netwoks__item">
-            <a class="social-netwoks__link link" href="#" aria-label="facebook">
-              <svg class="social-networks__icon" width="34px" height="34px">
-                <use href="./images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="footer-contact">
-          <p class="footer-contact__text">Feel free to contact</p>
-          <a class="footer-contact-tel__link link" href="tel:+610383766284"
-            >+61 (0) 383 766 284</a
-          >
+        <div class="footer-title__thumb">
+          <p class="footer-title__label">HOMEMADE ICE CREAM MADE</p>
+          <p class="footer-title">WITH PASSION</p>
+        </div>
+        <div class="footer-contact__thumb">
+          <ul class="social-netwoks list">
+            <li class="social-netwoks__item">
+              <a class="social-netwoks__link link" href="#" aria-label="github">
+                <svg class="social-networks__icon" width="34px" height="34px">
+                  <use href="./images/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-netwoks__item">
+              <a
+                class="social-netwoks__link link"
+                href="#"
+                aria-label="telegram"
+              >
+                <svg class="social-networks__icon" width="34px" height="34px">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-netwoks__item">
+              <a
+                class="social-netwoks__link link"
+                href="#"
+                aria-label="facebook"
+              >
+                <svg class="social-networks__icon" width="34px" height="34px">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-contact">
+            <p class="footer-contact__text">Feel free to contact</p>
+            <a class="footer-contact-tel__link link" href="tel:+610383766284"
+              >+61 (0) 383 766 284</a
+            >
+          </div>
         </div>
       </div>
-      <p class="copyright">
-        <small
-          >© 2022 - IceCream.<br />
-          All Rights Reserved.
-        </small>
-      </p>
+      <div class="copyright">
+        <ul class="copyright-list list">
+          <li>© 2022 - IceCream.</li>
+          <li>All Rights Reserved.</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
