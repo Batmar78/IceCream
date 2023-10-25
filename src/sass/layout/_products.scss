@@ -162,7 +162,7 @@ screen and (min-resolution: 3dppx) {
     height: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
     .products {
         background-image: url('./../images/products_bacgr_mob_480.png');
     }
