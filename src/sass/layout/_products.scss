@@ -162,6 +162,27 @@ screen and (min-resolution: 3dppx) {
     height: 16px;
 }
 
+@media screen and (min-width: 768px) {
+    .products {
+        background-image: url('./../images/products_bacgr_mob_480.png');
+    }
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .products {
+            background-image: url('./../images/products_bacgr_mob_480@2x.png');
+        }
+    }
+    
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .products {
+            background-image: url('./../images/products_bacgr_mob_480@3x.png');
+        }
+    }
+}
 
 @media screen and (min-width: 768px) {
     .products {
