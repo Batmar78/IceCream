@@ -5,7 +5,7 @@
   "homepage": "https://Batmar78.github.io/IceCream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /IceCream/"
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",
